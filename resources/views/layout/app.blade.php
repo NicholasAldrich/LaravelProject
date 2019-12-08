@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="min-height: 100%" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html style="min-height: 100% !important; box-sizing: border-box !important" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
             @yield('content') 
         </div>  
         <div>
-            <footer id="footer" class="py-4 bg-dark text-white-50">
+            <footer class="fixed-bottom py-4 bg-dark text-white-50">
             @include('inc.footer')
         </footer>
         </div>
